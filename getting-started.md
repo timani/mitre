@@ -2,24 +2,28 @@
 ### Install vagrant
 
 Check to see if Vagrant is confirmed
+
 ```
 $ vagrant --version
 Vagrant 1.7.4
 ```
 
 Create a project directory
+
 ```
 $ mkdir mitre
 $ cd mitre/
 ```
 
 Check the currently installed baseboxes
+
 ```
 $ vagrant box list
 laravel/homestead (virtualbox, 0.1.6)
 ```
 
 Add the boxcutter fedora 21 image
+
 ```
 $ vagrant box add boxcutter/fedora21
 ==> box: Loading metadata for box 'boxcutter/fedora21'
@@ -38,6 +42,7 @@ Enter your choice: 2
 ```
 
 Add the centos 6 + docker box-cutter basebox
+
 ```
 $ vagrant box add box-cutter/centos66;
 ==> box: Loading metadata for box 'box-cutter/centos66'
@@ -57,6 +62,7 @@ Enter your choice: 2
 ```
 
 Create a new project with the basebox
+
 ```
 $ vagrant init boxcutter/fedora21;
 A `Vagrantfile` has been placed in this directory. You are now
@@ -66,10 +72,12 @@ the comments in the Vagrantfile as well as documentation on
 ```
 
 A new file will be added to the `mitre` directory
+
 ```
 $ ll
 total 4
 -rw-rw-r--. 1 timani timani 3030 Jul 25 23:19 Vagrantfile
+```
 
 This will generate the boilerplate for the Vagrantfile
 
