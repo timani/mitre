@@ -23,7 +23,7 @@ This should generate a Vagrantfile in the new directory. When using the docker p
 
 This means you can skip the step of download a basebox to create the VM and use Docker to handle the initial setup which gives more flexibility.
 
-```
+```ruby
 Vagrant.configure(2) do |config|
   # The most common configuration options are documented and commented below.
   # For a complete reference, please see the online documentation at
